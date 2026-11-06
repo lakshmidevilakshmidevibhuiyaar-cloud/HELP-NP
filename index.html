@@ -69,6 +69,7 @@ const firebaseConfig = {
     const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
     console.log("HELP-NP Firebase Ready", app.name);
+    document.body.insertAdjacentHTML("beforeend", "<p>HELP-NP Firebase Ready</p>");
     document.body.insertAdjacentHTML("beforeend", "<p>Firebase App Initialized!</p>");
 </body>
 </html>
