@@ -78,6 +78,7 @@ import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/fir
   measurementId: "G-DX6VH9ZLXT"
 };
     const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
 const db = getFirestore(app);
     console.log("HELP-NP Firebase Ready", app.name);
     document.body.insertAdjacentHTML("beforeend", "<p>HELP-NP Firebase Ready</p>");
