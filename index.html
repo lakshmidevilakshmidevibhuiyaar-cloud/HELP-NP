@@ -84,6 +84,7 @@ const db = getFirestore(app);
     document.body.insertAdjacentHTML("beforeend", "<p>HELP-NP Firebase Ready</p>");
     document.body.insertAdjacentHTML("beforeend", "<p>Firebase App Initialized!</p>");
 document.getElementById("loginBtn").addEventListener("click", async () => {
+  document.getElementById("message").textContent = "Login Button Clicked!";
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   const message = document.getElementById("message");
