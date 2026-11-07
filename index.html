@@ -83,6 +83,18 @@ const db = getFirestore(app);
     console.log("HELP-NP Firebase Ready", app.name);
     document.body.insertAdjacentHTML("beforeend", "<p>HELP-NP Firebase Ready</p>");
     document.body.insertAdjacentHTML("beforeend", "<p>Firebase App Initialized!</p>");
-</script>
+document.getElementById("loginBtn").addEventListener("click", async () => {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const message = document.getElementById("message");
+
+  try {
+    await signInWithEmailAndPassword(auth, email, password);
+    message.textContent = "Login Successful!";
+  } catch (error) {
+    message.textContent = "Login Failed: " + error.message;
+  }
+});
+  </script>
   </body>
 </html>
