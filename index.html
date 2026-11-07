@@ -67,7 +67,8 @@ SOS
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
-const firebaseConfig = {
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js";
+    const firebaseConfig = {
   apiKey: "AIzaSyBxKH33Ym4WgthLIMHI60InVm4GN0LLGBM",
   authDomain: "help-np.firebaseapp.com",
   projectId: "help-np",
